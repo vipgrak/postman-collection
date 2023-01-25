@@ -1,0 +1,2237 @@
+{
+	"info": {
+		"_postman_id": "85172962-41e4-405e-927a-99cda6a22705",
+		"name": " Vetis GUID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FIX",
+			"item": [
+				{
+					"name": "Удаление GUID Головы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1xgc0jr&sl=1&tt=17m&ld=17q&nu=d41d8cd98f00b204e9800998ecf8427e&cl=6tap\"; tz=-180"
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DelGUID"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRGVsR1VJRA=="
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DelGUID\",\r\n    \"params\": {\r\n        \"guidbe\": \"c255eae1-2ca3-4022-b992-6896b6c964da\",\r\n        \"guiden\": null\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение GUID ХС по ИНН",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1xgc0jr&sl=1&tt=17m&ld=17q&nu=d41d8cd98f00b204e9800998ecf8427e&cl=6tap\"; tz=-180"
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DoTask"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRG9UYXNr"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DoTask\",\r\n    \"params\": {\r\n        \"data\": {\r\n            \"d\": [\r\n                null,\r\n                null,\r\n                null,\r\n                null,\r\n                \"3119008940\",\r\n                null,\r\n                \"get_business_entity\"\r\n            ],\r\n            \"s\": [\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"contractor_id\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"guidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"uuidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"ogrn\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"inn\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"kpp\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"action\"\r\n                }\r\n            ],\r\n            \"_type\": \"record\",\r\n            \"f\": 0\r\n        }\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка записи GUID XC в карточку",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"GUID XC записан\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    console.log(jsonData)",
+									"    pm.expect(jsonData.result.d[0]).to.eql(\"c255eae1-2ca3-4022-b992-6896b6c964da\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "fix-cloud.sbis.ru"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "did=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_name=MacBook-Air.local; new_machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; DeviceId=9b1c8ed1-9266-4f46-be59-b1b9daf47bdd; _ym_uid=1642704600935471186; _ym_d=1642704600; s3reg=78; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-a121c6319de7f51b; s3tok-0c8f=__9npMRApKg98g5n3qiwrb5YvHLbXqyrRNMM8FyZclHgTX7eglC2TLCwmscNlBFDYzB2MEcC6YkmQEHT6RzWAGJLzbX759pD4mUJlsbSKljEX8O9iEyOpqpz; s3sid-online-0c8f=005ec1b8-005ec1b9-00bd-fc2fbd3396cc179b; s3sid-cloud-d1b2=00000032-00c296f1-00ba-53182c64109992b8; s3sid-cloud-daab=00000002-0122b70d-00ba-76844716b5286989; s3sid-cloud-a536=000a6040-00c18f0f-00ba-66d97dda665a47fb; sid=000a6040-00c18f0f-00ba-66d97dda665a47fb; s3sid-online-a536=00000003-00c250cb-00ba-cc3e8e901335f688; s3tok-a536=__Q5cicdHnRqNGckGe44ytbHkYybmwMMDgntxuMSqHwXBNUA1t1g8CVZ90raUDkcxrc1k5On0FQo68QfuNujD0fAMDfxfogrK2rAxwM6IMDrs7iJOuskztuS; s3sid-online-daab=00000003-0122b611-00ba-e57485357d5dc689; s3tok-daab=__1hdWXE6IB4w8UvWebxcExy3oXdLKp69sRI8O6BL0ydA9zkijPVfGobguI0dqfNWSd3tdLBGwfogO6VbffxAxgWecQnBxgEhXhgK8wNshqpoTV2mZOx1888; cloud_device_id=c-0a76789e-9725-4c7e-ae63-43aefbe61d30; s3sid-online-d1b2=00000003-00c40e3b-00ba-8bff0a2cf72821d8; s3tok-d1b2=__PsXeuskhwsOzqzzY8eoTCgcD3yOW47kPvHjWy6CMHnfLj3940jiCclR6iv5JoUyHQTOsSZWcLpRRSkTkkSxWU5ltCrMQDi4TY1MYBfZX9uEvaII2CDQlub; RT=\"z=1&dm=sbis.ru&si=65b872f9-c7c3-43ef-a8e9-48bcc6d38023&ss=l2034p4u&sl=1&tt=2t0&ld=emsm4\"; s3ds=1440%7C900%7C1189%7C789%7C1440%7C900; lang=ru-RU; lang_ignore=bl; tz=-180"
+							},
+							{
+								"key": "origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36"
+							},
+							{
+								"key": "x-calledmethod",
+								"value": "Marking.GetMarking"
+							},
+							{
+								"key": "x-originalmethodname",
+								"value": "TWFya2luZy5HZXRNYXJraW5n"
+							},
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"protocol\": 6,\n    \"method\": \"Marking.GetMarking\",\n    \"params\": {\n        \"contragent_id\": 53779419\n    },\n    \"id\": 1\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2134-2",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2134-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удаление GUID Головы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1xgc0jr&sl=1&tt=17m&ld=17q&nu=d41d8cd98f00b204e9800998ecf8427e&cl=6tap\"; tz=-180"
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DelGUID"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRGVsR1VJRA=="
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DelGUID\",\r\n    \"params\": {\r\n        \"guidbe\": \"c255eae1-2ca3-4022-b992-6896b6c964da\",\r\n        \"guiden\": null\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка записи GUID XC в карточку",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"GUID XC удален\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    console.log(jsonData)",
+									"    pm.expect(jsonData.result.d[0]).to.eql(null);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "fix-cloud.sbis.ru"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "did=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_name=MacBook-Air.local; new_machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; DeviceId=9b1c8ed1-9266-4f46-be59-b1b9daf47bdd; _ym_uid=1642704600935471186; _ym_d=1642704600; s3reg=78; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-a121c6319de7f51b; s3tok-0c8f=__9npMRApKg98g5n3qiwrb5YvHLbXqyrRNMM8FyZclHgTX7eglC2TLCwmscNlBFDYzB2MEcC6YkmQEHT6RzWAGJLzbX759pD4mUJlsbSKljEX8O9iEyOpqpz; s3sid-online-0c8f=005ec1b8-005ec1b9-00bd-fc2fbd3396cc179b; s3sid-cloud-d1b2=00000032-00c296f1-00ba-53182c64109992b8; s3sid-cloud-daab=00000002-0122b70d-00ba-76844716b5286989; s3sid-cloud-a536=000a6040-00c18f0f-00ba-66d97dda665a47fb; sid=000a6040-00c18f0f-00ba-66d97dda665a47fb; s3sid-online-a536=00000003-00c250cb-00ba-cc3e8e901335f688; s3tok-a536=__Q5cicdHnRqNGckGe44ytbHkYybmwMMDgntxuMSqHwXBNUA1t1g8CVZ90raUDkcxrc1k5On0FQo68QfuNujD0fAMDfxfogrK2rAxwM6IMDrs7iJOuskztuS; s3sid-online-daab=00000003-0122b611-00ba-e57485357d5dc689; s3tok-daab=__1hdWXE6IB4w8UvWebxcExy3oXdLKp69sRI8O6BL0ydA9zkijPVfGobguI0dqfNWSd3tdLBGwfogO6VbffxAxgWecQnBxgEhXhgK8wNshqpoTV2mZOx1888; cloud_device_id=c-0a76789e-9725-4c7e-ae63-43aefbe61d30; s3sid-online-d1b2=00000003-00c40e3b-00ba-8bff0a2cf72821d8; s3tok-d1b2=__PsXeuskhwsOzqzzY8eoTCgcD3yOW47kPvHjWy6CMHnfLj3940jiCclR6iv5JoUyHQTOsSZWcLpRRSkTkkSxWU5ltCrMQDi4TY1MYBfZX9uEvaII2CDQlub; RT=\"z=1&dm=sbis.ru&si=65b872f9-c7c3-43ef-a8e9-48bcc6d38023&ss=l2034p4u&sl=1&tt=2t0&ld=emsm4\"; s3ds=1440%7C900%7C1189%7C789%7C1440%7C900; lang=ru-RU; lang_ignore=bl; tz=-180"
+							},
+							{
+								"key": "origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36"
+							},
+							{
+								"key": "x-calledmethod",
+								"value": "Marking.GetMarking"
+							},
+							{
+								"key": "x-originalmethodname",
+								"value": "TWFya2luZy5HZXRNYXJraW5n"
+							},
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"protocol\": 6,\n    \"method\": \"Marking.GetMarking\",\n    \"params\": {\n        \"contragent_id\": 53779419\n    },\n    \"id\": 1\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2134-2",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2134-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение GUID ХС по GUIDBE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1xgc0jr&sl=1&tt=17m&ld=17q&nu=d41d8cd98f00b204e9800998ecf8427e&cl=6tap\"; tz=-180"
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DoTask"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRG9UYXNr"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DoTask\",\r\n    \"params\": {\r\n        \"data\": {\r\n            \"d\": [\r\n                null,\r\n                \"c255eae1-2ca3-4022-b992-6896b6c964da\",\r\n                null,\r\n                null,\r\n                null,\r\n                null,\r\n                \"get_business_entity\"\r\n            ],\r\n            \"s\": [\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"contractor_id\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"guidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"uuidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"ogrn\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"inn\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"kpp\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"action\"\r\n                }\r\n            ],\r\n            \"_type\": \"record\",\r\n            \"f\": 0\r\n        }\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка записи GUID XC в карточку Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"GUID XC записан\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    console.log(jsonData)",
+									"    pm.expect(jsonData.result.d[0]).to.eql(\"c255eae1-2ca3-4022-b992-6896b6c964da\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "fix-cloud.sbis.ru"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "did=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_name=MacBook-Air.local; new_machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; DeviceId=9b1c8ed1-9266-4f46-be59-b1b9daf47bdd; _ym_uid=1642704600935471186; _ym_d=1642704600; s3reg=78; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-a121c6319de7f51b; s3tok-0c8f=__9npMRApKg98g5n3qiwrb5YvHLbXqyrRNMM8FyZclHgTX7eglC2TLCwmscNlBFDYzB2MEcC6YkmQEHT6RzWAGJLzbX759pD4mUJlsbSKljEX8O9iEyOpqpz; s3sid-online-0c8f=005ec1b8-005ec1b9-00bd-fc2fbd3396cc179b; s3sid-cloud-d1b2=00000032-00c296f1-00ba-53182c64109992b8; s3sid-cloud-daab=00000002-0122b70d-00ba-76844716b5286989; s3sid-cloud-a536=000a6040-00c18f0f-00ba-66d97dda665a47fb; sid=000a6040-00c18f0f-00ba-66d97dda665a47fb; s3sid-online-a536=00000003-00c250cb-00ba-cc3e8e901335f688; s3tok-a536=__Q5cicdHnRqNGckGe44ytbHkYybmwMMDgntxuMSqHwXBNUA1t1g8CVZ90raUDkcxrc1k5On0FQo68QfuNujD0fAMDfxfogrK2rAxwM6IMDrs7iJOuskztuS; s3sid-online-daab=00000003-0122b611-00ba-e57485357d5dc689; s3tok-daab=__1hdWXE6IB4w8UvWebxcExy3oXdLKp69sRI8O6BL0ydA9zkijPVfGobguI0dqfNWSd3tdLBGwfogO6VbffxAxgWecQnBxgEhXhgK8wNshqpoTV2mZOx1888; cloud_device_id=c-0a76789e-9725-4c7e-ae63-43aefbe61d30; s3sid-online-d1b2=00000003-00c40e3b-00ba-8bff0a2cf72821d8; s3tok-d1b2=__PsXeuskhwsOzqzzY8eoTCgcD3yOW47kPvHjWy6CMHnfLj3940jiCclR6iv5JoUyHQTOsSZWcLpRRSkTkkSxWU5ltCrMQDi4TY1MYBfZX9uEvaII2CDQlub; RT=\"z=1&dm=sbis.ru&si=65b872f9-c7c3-43ef-a8e9-48bcc6d38023&ss=l2034p4u&sl=1&tt=2t0&ld=emsm4\"; s3ds=1440%7C900%7C1189%7C789%7C1440%7C900; lang=ru-RU; lang_ignore=bl; tz=-180"
+							},
+							{
+								"key": "origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36"
+							},
+							{
+								"key": "x-calledmethod",
+								"value": "Marking.GetMarking"
+							},
+							{
+								"key": "x-originalmethodname",
+								"value": "TWFya2luZy5HZXRNYXJraW5n"
+							},
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"protocol\": 6,\n    \"method\": \"Marking.GetMarking\",\n    \"params\": {\n        \"contragent_id\": 53779419\n    },\n    \"id\": 1\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2134-2",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2134-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удаление GUID Головы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1xgc0jr&sl=1&tt=17m&ld=17q&nu=d41d8cd98f00b204e9800998ecf8427e&cl=6tap\"; tz=-180"
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DelGUID"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRGVsR1VJRA=="
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"jsonrpc\":\"2.0\",\"protocol\":6,\"method\":\"VetisAPILoader.DelGUID\",\"params\":{\"guidbe\":\"c255eae1-2ca3-4022-b992-6896b6c964da\",\"guiden\":null},\"id\":1}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка записи GUID XC в карточку Copy 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"GUID XC удален\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    console.log(jsonData)",
+									"    pm.expect(jsonData.result.d[0]).to.eql(null);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "fix-cloud.sbis.ru"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "did=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_name=MacBook-Air.local; new_machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; DeviceId=9b1c8ed1-9266-4f46-be59-b1b9daf47bdd; _ym_uid=1642704600935471186; _ym_d=1642704600; s3reg=78; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-a121c6319de7f51b; s3tok-0c8f=__9npMRApKg98g5n3qiwrb5YvHLbXqyrRNMM8FyZclHgTX7eglC2TLCwmscNlBFDYzB2MEcC6YkmQEHT6RzWAGJLzbX759pD4mUJlsbSKljEX8O9iEyOpqpz; s3sid-online-0c8f=005ec1b8-005ec1b9-00bd-fc2fbd3396cc179b; s3sid-cloud-d1b2=00000032-00c296f1-00ba-53182c64109992b8; s3sid-cloud-daab=00000002-0122b70d-00ba-76844716b5286989; s3sid-cloud-a536=000a6040-00c18f0f-00ba-66d97dda665a47fb; sid=000a6040-00c18f0f-00ba-66d97dda665a47fb; s3sid-online-a536=00000003-00c250cb-00ba-cc3e8e901335f688; s3tok-a536=__Q5cicdHnRqNGckGe44ytbHkYybmwMMDgntxuMSqHwXBNUA1t1g8CVZ90raUDkcxrc1k5On0FQo68QfuNujD0fAMDfxfogrK2rAxwM6IMDrs7iJOuskztuS; s3sid-online-daab=00000003-0122b611-00ba-e57485357d5dc689; s3tok-daab=__1hdWXE6IB4w8UvWebxcExy3oXdLKp69sRI8O6BL0ydA9zkijPVfGobguI0dqfNWSd3tdLBGwfogO6VbffxAxgWecQnBxgEhXhgK8wNshqpoTV2mZOx1888; cloud_device_id=c-0a76789e-9725-4c7e-ae63-43aefbe61d30; s3sid-online-d1b2=00000003-00c40e3b-00ba-8bff0a2cf72821d8; s3tok-d1b2=__PsXeuskhwsOzqzzY8eoTCgcD3yOW47kPvHjWy6CMHnfLj3940jiCclR6iv5JoUyHQTOsSZWcLpRRSkTkkSxWU5ltCrMQDi4TY1MYBfZX9uEvaII2CDQlub; RT=\"z=1&dm=sbis.ru&si=65b872f9-c7c3-43ef-a8e9-48bcc6d38023&ss=l2034p4u&sl=1&tt=2t0&ld=emsm4\"; s3ds=1440%7C900%7C1189%7C789%7C1440%7C900; lang=ru-RU; lang_ignore=bl; tz=-180"
+							},
+							{
+								"key": "origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36"
+							},
+							{
+								"key": "x-calledmethod",
+								"value": "Marking.GetMarking"
+							},
+							{
+								"key": "x-originalmethodname",
+								"value": "TWFya2luZy5HZXRNYXJraW5n"
+							},
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"protocol\": 6,\n    \"method\": \"Marking.GetMarking\",\n    \"params\": {\n        \"contragent_id\": 53779419\n    },\n    \"id\": 1\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2134-2",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2134-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получение GUID ХС по ОГРН",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1xgc0jr&sl=1&tt=17m&ld=17q&nu=d41d8cd98f00b204e9800998ecf8427e&cl=6tap\"; tz=-180"
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DoTask"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRG9UYXNr"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DoTask\",\r\n    \"params\": {\r\n        \"data\": {\r\n            \"d\": [\r\n                null,\r\n                null,\r\n                null,\r\n                \"1173123020883\",\r\n                null,\r\n                null,\r\n                \"get_business_entity\"\r\n            ],\r\n            \"s\": [\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"contractor_id\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"guidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"uuidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"ogrn\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"inn\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"kpp\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"action\"\r\n                }\r\n            ],\r\n            \"_type\": \"record\",\r\n            \"f\": 0\r\n        }\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка записи GUID XC в карточку Copy 3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"GUID XC записан\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    console.log(jsonData)",
+									"    pm.expect(jsonData.result.d[0]).to.eql(\"c255eae1-2ca3-4022-b992-6896b6c964da\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "fix-cloud.sbis.ru"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "did=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_name=MacBook-Air.local; new_machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; DeviceId=9b1c8ed1-9266-4f46-be59-b1b9daf47bdd; _ym_uid=1642704600935471186; _ym_d=1642704600; s3reg=78; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-a121c6319de7f51b; s3tok-0c8f=__9npMRApKg98g5n3qiwrb5YvHLbXqyrRNMM8FyZclHgTX7eglC2TLCwmscNlBFDYzB2MEcC6YkmQEHT6RzWAGJLzbX759pD4mUJlsbSKljEX8O9iEyOpqpz; s3sid-online-0c8f=005ec1b8-005ec1b9-00bd-fc2fbd3396cc179b; s3sid-cloud-d1b2=00000032-00c296f1-00ba-53182c64109992b8; s3sid-cloud-daab=00000002-0122b70d-00ba-76844716b5286989; s3sid-cloud-a536=000a6040-00c18f0f-00ba-66d97dda665a47fb; sid=000a6040-00c18f0f-00ba-66d97dda665a47fb; s3sid-online-a536=00000003-00c250cb-00ba-cc3e8e901335f688; s3tok-a536=__Q5cicdHnRqNGckGe44ytbHkYybmwMMDgntxuMSqHwXBNUA1t1g8CVZ90raUDkcxrc1k5On0FQo68QfuNujD0fAMDfxfogrK2rAxwM6IMDrs7iJOuskztuS; s3sid-online-daab=00000003-0122b611-00ba-e57485357d5dc689; s3tok-daab=__1hdWXE6IB4w8UvWebxcExy3oXdLKp69sRI8O6BL0ydA9zkijPVfGobguI0dqfNWSd3tdLBGwfogO6VbffxAxgWecQnBxgEhXhgK8wNshqpoTV2mZOx1888; cloud_device_id=c-0a76789e-9725-4c7e-ae63-43aefbe61d30; s3sid-online-d1b2=00000003-00c40e3b-00ba-8bff0a2cf72821d8; s3tok-d1b2=__PsXeuskhwsOzqzzY8eoTCgcD3yOW47kPvHjWy6CMHnfLj3940jiCclR6iv5JoUyHQTOsSZWcLpRRSkTkkSxWU5ltCrMQDi4TY1MYBfZX9uEvaII2CDQlub; RT=\"z=1&dm=sbis.ru&si=65b872f9-c7c3-43ef-a8e9-48bcc6d38023&ss=l2034p4u&sl=1&tt=2t0&ld=emsm4\"; s3ds=1440%7C900%7C1189%7C789%7C1440%7C900; lang=ru-RU; lang_ignore=bl; tz=-180"
+							},
+							{
+								"key": "origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36"
+							},
+							{
+								"key": "x-calledmethod",
+								"value": "Marking.GetMarking"
+							},
+							{
+								"key": "x-originalmethodname",
+								"value": "TWFya2luZy5HZXRNYXJraW5n"
+							},
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"protocol\": 6,\n    \"method\": \"Marking.GetMarking\",\n    \"params\": {\n        \"contragent_id\": 53779419\n    },\n    \"id\": 1\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2134-2",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2134-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удаление GUID Площадки",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1xgc0jr&sl=1&tt=17m&ld=17q&nu=d41d8cd98f00b204e9800998ecf8427e&cl=6tap\"; tz=-180"
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DelGUID"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRGVsR1VJRA=="
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DelGUID\",\r\n    \"params\": {\r\n        \"guidbe\": \"c255eae1-2ca3-4022-b992-6896b6c964da\",\r\n        \"guiden\": \"88a33f96-bc51-4f04-ab42-066ba2753c5c\"\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Загрузка площадки на филиал",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; tz=-180; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1x9a152&sl=0&tt=0&ld=17q&nu=45e02c1fb09b58697aaa2fbaad49c520&cl=8cqpi\""
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DoTask"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRG9UYXNr"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DoTask\",\r\n    \"params\": {\r\n        \"data\": {\r\n            \"d\": [\r\n                null,\r\n                null,\r\n                \"c255eae1-2ca3-4022-b992-6896b6c964da\",\r\n                null,\r\n                \"88a33f96-bc51-4f04-ab42-066ba2753c5c\",\r\n                null,\r\n                null,\r\n                \"get_enterprise\"\r\n            ],\r\n            \"s\": [\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"contractor_id\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"be_contractor_id\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"guidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"uuidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"guiden\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"uuiden\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"subtype\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"action\"\r\n                }\r\n            ],\r\n            \"_type\": \"record\",\r\n            \"f\": 0\r\n        }\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка записи GUID ПЛ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"GUID ПЛ записан\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.result.d[1]).to.eql(\"88a33f96-bc51-4f04-ab42-066ba2753c5c\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "fix-cloud.sbis.ru"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "did=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_name=MacBook-Air.local; new_machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; DeviceId=9b1c8ed1-9266-4f46-be59-b1b9daf47bdd; _ym_uid=1642704600935471186; _ym_d=1642704600; s3reg=78; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-a121c6319de7f51b; s3tok-0c8f=__9npMRApKg98g5n3qiwrb5YvHLbXqyrRNMM8FyZclHgTX7eglC2TLCwmscNlBFDYzB2MEcC6YkmQEHT6RzWAGJLzbX759pD4mUJlsbSKljEX8O9iEyOpqpz; s3sid-online-0c8f=005ec1b8-005ec1b9-00bd-fc2fbd3396cc179b; s3sid-cloud-d1b2=00000032-00c296f1-00ba-53182c64109992b8; s3sid-cloud-daab=00000002-0122b70d-00ba-76844716b5286989; s3sid-cloud-a536=000a6040-00c18f0f-00ba-66d97dda665a47fb; sid=000a6040-00c18f0f-00ba-66d97dda665a47fb; s3sid-online-a536=00000003-00c250cb-00ba-cc3e8e901335f688; s3tok-a536=__Q5cicdHnRqNGckGe44ytbHkYybmwMMDgntxuMSqHwXBNUA1t1g8CVZ90raUDkcxrc1k5On0FQo68QfuNujD0fAMDfxfogrK2rAxwM6IMDrs7iJOuskztuS; s3sid-online-daab=00000003-0122b611-00ba-e57485357d5dc689; s3tok-daab=__1hdWXE6IB4w8UvWebxcExy3oXdLKp69sRI8O6BL0ydA9zkijPVfGobguI0dqfNWSd3tdLBGwfogO6VbffxAxgWecQnBxgEhXhgK8wNshqpoTV2mZOx1888; cloud_device_id=c-0a76789e-9725-4c7e-ae63-43aefbe61d30; s3sid-online-d1b2=00000003-00c40e3b-00ba-8bff0a2cf72821d8; s3tok-d1b2=__PsXeuskhwsOzqzzY8eoTCgcD3yOW47kPvHjWy6CMHnfLj3940jiCclR6iv5JoUyHQTOsSZWcLpRRSkTkkSxWU5ltCrMQDi4TY1MYBfZX9uEvaII2CDQlub; RT=\"z=1&dm=sbis.ru&si=65b872f9-c7c3-43ef-a8e9-48bcc6d38023&ss=l2034p4u&sl=1&tt=2t0&ld=emsm4\"; s3ds=1440%7C900%7C1189%7C789%7C1440%7C900; lang=ru-RU; lang_ignore=bl; tz=-180"
+							},
+							{
+								"key": "origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36"
+							},
+							{
+								"key": "x-calledmethod",
+								"value": "Marking.GetMarking"
+							},
+							{
+								"key": "x-originalmethodname",
+								"value": "TWFya2luZy5HZXRNYXJraW5n"
+							},
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"protocol\": 6,\n    \"method\": \"Marking.GetMarking\",\n    \"params\": {\n        \"contragent_id\": 71318377\n    },\n    \"id\": 1\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2134-2",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2134-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удаление GUID Площадки",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1xgc0jr&sl=1&tt=17m&ld=17q&nu=d41d8cd98f00b204e9800998ecf8427e&cl=6tap\"; tz=-180"
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DelGUID"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRGVsR1VJRA=="
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DelGUID\",\r\n    \"params\": {\r\n        \"guidbe\": \"c255eae1-2ca3-4022-b992-6896b6c964da\",\r\n        \"guiden\": \"88a33f96-bc51-4f04-ab42-066ba2753c5c\"\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка удаления записи GUID ПЛ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"GUID ПЛ записан\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.result.d[1]).to.eql(null);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "fix-cloud.sbis.ru"
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "accept-language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "did=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; machine_name=MacBook-Air.local; new_machine_id=f80a454c-6593-51d7-a5a8-3d0b4718aaa6; DeviceId=9b1c8ed1-9266-4f46-be59-b1b9daf47bdd; _ym_uid=1642704600935471186; _ym_d=1642704600; s3reg=78; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-a121c6319de7f51b; s3tok-0c8f=__9npMRApKg98g5n3qiwrb5YvHLbXqyrRNMM8FyZclHgTX7eglC2TLCwmscNlBFDYzB2MEcC6YkmQEHT6RzWAGJLzbX759pD4mUJlsbSKljEX8O9iEyOpqpz; s3sid-online-0c8f=005ec1b8-005ec1b9-00bd-fc2fbd3396cc179b; s3sid-cloud-d1b2=00000032-00c296f1-00ba-53182c64109992b8; s3sid-cloud-daab=00000002-0122b70d-00ba-76844716b5286989; s3sid-cloud-a536=000a6040-00c18f0f-00ba-66d97dda665a47fb; sid=000a6040-00c18f0f-00ba-66d97dda665a47fb; s3sid-online-a536=00000003-00c250cb-00ba-cc3e8e901335f688; s3tok-a536=__Q5cicdHnRqNGckGe44ytbHkYybmwMMDgntxuMSqHwXBNUA1t1g8CVZ90raUDkcxrc1k5On0FQo68QfuNujD0fAMDfxfogrK2rAxwM6IMDrs7iJOuskztuS; s3sid-online-daab=00000003-0122b611-00ba-e57485357d5dc689; s3tok-daab=__1hdWXE6IB4w8UvWebxcExy3oXdLKp69sRI8O6BL0ydA9zkijPVfGobguI0dqfNWSd3tdLBGwfogO6VbffxAxgWecQnBxgEhXhgK8wNshqpoTV2mZOx1888; cloud_device_id=c-0a76789e-9725-4c7e-ae63-43aefbe61d30; s3sid-online-d1b2=00000003-00c40e3b-00ba-8bff0a2cf72821d8; s3tok-d1b2=__PsXeuskhwsOzqzzY8eoTCgcD3yOW47kPvHjWy6CMHnfLj3940jiCclR6iv5JoUyHQTOsSZWcLpRRSkTkkSxWU5ltCrMQDi4TY1MYBfZX9uEvaII2CDQlub; RT=\"z=1&dm=sbis.ru&si=65b872f9-c7c3-43ef-a8e9-48bcc6d38023&ss=l2034p4u&sl=1&tt=2t0&ld=emsm4\"; s3ds=1440%7C900%7C1189%7C789%7C1440%7C900; lang=ru-RU; lang_ignore=bl; tz=-180"
+							},
+							{
+								"key": "origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36"
+							},
+							{
+								"key": "x-calledmethod",
+								"value": "Marking.GetMarking"
+							},
+							{
+								"key": "x-originalmethodname",
+								"value": "TWFya2luZy5HZXRNYXJraW5n"
+							},
+							{
+								"key": "x-requested-with",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"protocol\": 6,\n    \"method\": \"Marking.GetMarking\",\n    \"params\": {\n        \"contragent_id\": 71318377\n    },\n    \"id\": 1\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2134-2",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2134-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Загрузка площадки на голову(ХС)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; tz=-180; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1x9a152&sl=0&tt=0&ld=17q&nu=45e02c1fb09b58697aaa2fbaad49c520&cl=8cqpi\""
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DoTask"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRG9UYXNr"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DoTask\",\r\n    \"params\": {\r\n        \"data\": {\r\n            \"d\": [\r\n                \"53779419\",\r\n                null,\r\n                \"c255eae1-2ca3-4022-b992-6896b6c964da\",\r\n                null,\r\n                \"88a33f96-bc51-4f04-ab42-066ba2753c5c\",\r\n                null,\r\n                null,\r\n                \"get_enterprise\"\r\n            ],\r\n            \"s\": [\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"contractor_id\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"be_contractor_id\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"guidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"uuidbe\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"guiden\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"uuiden\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"subtype\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"action\"\r\n                }\r\n            ],\r\n            \"_type\": \"record\",\r\n            \"f\": 0\r\n        }\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удаление GUID Площадки с Головы",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3su=000a6040-00c18f0f; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; CpsUserId=6513e11d-2995-4030-ad44-16fa8bf8566e; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; last_providers=WyJsZGFwIl0=; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; s3sid-online-d1b2=00000003-00c40e3b-00ba-3ae27cd586e054ea; s3tok-d1b2=__1bQ8eVD1f77LuOlBul8onVwaJvgieKFI2cv5liJAcMJZTTkESHOyooK7nihReAyb3D38R0dbUoi10gadwFf7M89cQ0r8ksombTSXEI6qdTBFCUAcY7HajM; lang=ru-RU; s3tok-a536=__INQ9tPVgFTiirJRma6zD6pKdMtKIOR7zCpODujLVth7dJjX3XtQw5m600uCpNbnWcyOxlr6QYII4s7jGu3TaoEKjevoFWGOb40W8ffONjMIuyDjc0aDejz; s3sid-online-a536=00000003-00c250cb-00ba-8555d76977be36fb; s3sid-cloud-daab=00000002-0122b70d-00ba-dbba460b1e5f2079; cloud_device_id=c-6d11f2e9-dd8a-46ad-a226-e293e45c312c; s3sid-cloud-a536=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; sid=000a6040-00c18f0f-00ad-150eea1ecadf3a7a; s3ds=1920%7C1080%7C1856%7C977%7C1856%7C1080; RT=\"z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ss=l1xgc0jr&sl=1&tt=17m&ld=17q&nu=d41d8cd98f00b204e9800998ecf8427e&cl=6tap\"; tz=-180"
+							},
+							{
+								"key": "Origin",
+								"value": "https://fix-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://fix-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DelGUID"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRGVsR1VJRA=="
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DelGUID\",\r\n    \"params\": {\r\n        \"guidbe\": \"c255eae1-2ca3-4022-b992-6896b6c964da\",\r\n        \"guiden\": \"88a33f96-bc51-4f04-ab42-066ba2753c5c\"\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://fix-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"fix-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Загрузка изменений площадок за определенный период",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"function convertDate(date, addHour) {\r",
+									"   var modifDate = date;\r",
+									"   var dateUTC = modifDate.toISOString();\r",
+									"   var partsOfDate = dateUTC.split('T');\r",
+									"   if(addHour) {\r",
+									"      modifDate.setHours(modifDate.getHours() + addHour);\r",
+									"   }\r",
+									"   return `${partsOfDate[0]} ${modifDate.toLocaleTimeString()}`\r",
+									"}\r",
+									"var now = new Date();\r",
+									"startDate = convertDate(new Date(), -1);\r",
+									"endDate = convertDate(new Date());\r",
+									"console.log(startDate);\r",
+									"console.log(endDate);\r",
+									"pm.globals.set(\"startDate\", startDate);\r",
+									"pm.globals.set(\"endDate\", endDate);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, */*; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ru-RU;q=0.8,en-US;q=0.5,en;q=0.3"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Cookie",
+								"value": "s3reg=76; DeviceId=b3e0b28f-0199-4d76-82ae-1f515ef65b3b; _ym_d=1634211766; _ym_uid=1634211766435351647; did=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_id=885f1bd4-99a6-440a-001d-4568dc8c62a4; machine_name=R44-KOLESNICHEN; new_machine_id=753dfa2a-033d-96bf-0c80-cc4ac2bb4b17; s3sid-my-d1b2=005134f5-005a91d1-00bd-f13fdf9bc42f5288; s3sid-cloud-0c8f=00000002-005ed53e-00ba-2f14771bed9a2509; s3tok-daab=__C0oxJsmftiYAh6eeR7tdHDAZYOxf4RjTE9ho4tttusVumAvztYRELLjuru0tiSw9wp5Uxl8SgfY0WQQdagyYJgcH8rV1O4TzZHJ0lF6txdnhK2ZjuW95eC; s3tok-0c8f=__hg7NNliPtKYU5WAKUFAvDzHSsEOQdcY4MA80wxhFkarIQE7EzYd1s7pIhw22REfuslNEMvyXduBNaivKZCnGnbaQx1WmD4ewtVGWPM84RY5E0jhA7vLeEm; s3sid-online-0c8f=00000003-00af3360-00bd-95b95f9580fef928; CpsUserId=514d519e-1a52-4d4f-a09b-1626ea52cf10; last_providers=WyJsZGFwIl0=; s3su=00000032-00c296f1; s3sid-online-daab=00000003-0122b611-00bd-4108cdd2e7532ab9; s3sid-cloud-daab=00000002-0122b70d-00ba-f4af940da8a39a6b; s3sid-cloud-a536=000a6040-00c18f0f-00ad-a5d6cb2f889c7dda; s3sid-online-a536=0060b167-0060b168-00ba-d327de28c735181b; s3tok-a536=__iKOpsgYcBjpebPCZWXihAm3y0Djb0ihlLCabVDvFdF1gHOMSI8pFIlXdxoojiMAGib7R4J8i5wug19JYNFSNGuSCwhMdCuQ3XoAqMqKjLobPfxPSFctaTG; cloud_device_id=c-b1c5638a-a58f-4b3c-aa62-8e96847539d2; lang=ru-RU; s3sid-online-d1b2=00000003-00c40e3b-00ba-231b124695d7b1b9; s3tok-d1b2=__DwesYqLGXlpLkbRHALK2k9JNe4z5cF9jQzoa8PapIUtnRcGeiK4ZAhjMn7KjDBeCM7qoPSnX2nxVHoSFKIwqbej39RNHf3bSWfjfG5Vfp8sgfaWXZPUeYG; s3sid-cloud-d1b2=00000032-00c296f1-00ad-75c9e17d85acc838; sid=00000032-00c296f1-00ad-75c9e17d85acc838; s3ds=1920%7C1080%7C1858%7C977%7C1858%7C1080; tz=-180; RT=\"sl=1&ss=l1q5pcp7&tt=2e6&z=1&dm=sbis.ru&si=107c275d-6836-4d6b-b819-e08016c411fd&ld=9tcw\""
+							},
+							{
+								"key": "Origin",
+								"value": "https://test-cloud.sbis.ru"
+							},
+							{
+								"key": "Referer",
+								"value": "https://test-cloud.sbis.ru/spp-admin/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+							},
+							{
+								"key": "X-CalledMethod",
+								"value": "VetisAPILoader.DoTask"
+							},
+							{
+								"key": "X-OriginalMethodName",
+								"value": "VmV0aXNBUElMb2FkZXIuRG9UYXNr"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"protocol\": 6,\r\n    \"method\": \"VetisAPILoader.DoTask\",\r\n    \"params\": {\r\n        \"data\": {\r\n            \"d\": [\r\n                \"{{startDate}}\",\r\n                \"{{endDate}}\",\r\n                \"get_enterprise_changes\"\r\n            ],\r\n            \"s\": [\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"tstart\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"tend\"\r\n                },\r\n                {\r\n                    \"t\": \"Строка\",\r\n                    \"n\": \"action\"\r\n                }\r\n            ],\r\n            \"_type\": \"record\",\r\n            \"f\": 0\r\n        }\r\n    },\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://test-cloud.sbis.ru/spp-admin/service/?x_version=22.2118-7",
+							"protocol": "https",
+							"host": [
+								"test-cloud",
+								"sbis",
+								"ru"
+							],
+							"path": [
+								"spp-admin",
+								"service",
+								""
+							],
+							"query": [
+								{
+									"key": "x_version",
+									"value": "22.2118-7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
